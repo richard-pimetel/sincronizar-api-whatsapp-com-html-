@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: calc(100vh - 40px);
+    background: #fff;
+    display: flex;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+}
+
+.left {
+    position: relative;
+    flex: 30%;
+    background: #fff;
+    border-right: 1px solid #e9edef;
+}
+
+.right {
+    position: relative;
+    flex: 70%;
+    background: #efeae2;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.perfil {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.perfil img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+.acoes button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #54656f;
+}
+
+.pesquisa {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.pesquisaInput {
+    position: relative;
+    width: 100%;
+    background: #f0f2f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.pesquisaInput ion-icon {
+    color: #54656f;
+    font-size: 1.2em;
+}
+
+.pesquisaInput input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 5px;
+    font-size: 0.9em;
+    color: #111;
+}
+
+.contatos {
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.contato {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f0f2f5;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth transition for hover */
+}
+
+.contato:hover {
+    background: #f0f2f5;
+    /* Remove any size changes on hover */
+}
+
+
+.perfil {
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.perfilDados {
+    position: relative;
+    width: 100%;
+}
+
+.perfilDados h3 {
+    font-size: 1em;
+    color: #111;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.perfilDados span {
+    display: block;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.right .top {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.right .top .contato {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+}
+
+/* Fix the image sizing in the top bar */
+.right .top .contato img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.right .top .confg {
+    display: flex;
+    gap: 10px;
+}
+
+.right .top .confg button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #54656f;
+}
+
+#conversa {
+    position: relative;
+    height: calc(100% - 120px);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.linhaMensagem {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.mensagem {
+    position: relative;
+    max-width: 70%;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.mensagem p {
+    color: #111;
+}
+
+.mensagem span {
+    display: block;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.meMensagem {
+    margin-left: auto;
+    background: #dcf8c6;
+}
+
+.contatoMensagem {
+    margin-right: auto;
+}
+
+#envio {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+#envio div {
+    position: relative;
+    width: 95%;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+#envio div input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#envio button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #54656f;
+}
+
+.inicio-conversa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #fff;
+}
+
+.inicio-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.inicio-content img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.inicio-content h1 {
+    color: #41525d;
+    margin-bottom: 10px;
+}
+
+.inicio-content p {
+    color: #667781;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .left {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        z-index: 1000;
+        transition: 0.5s;
+    }
+    
+    .left.chatTotal {
+        left: 0;
+    }
+}
